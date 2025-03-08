@@ -1,6 +1,6 @@
 # Linear MCP Server
 
-[![smithery badge](https://smithery.ai/badge/linear-mcp-server)](https://smithery.ai/server/linear-mcp-server)
+[![npm version](https://img.shields.io/npm/v/linear-mcp-server.svg)](https://www.npmjs.com/package/linear-mcp-server) [![smithery badge](https://smithery.ai/badge/linear-mcp-server)](https://smithery.ai/server/linear-mcp-server)
 
 A [Model Context Protocol](https://github.com/modelcontextprotocol) server for the [Linear API](https://developers.linear.app/docs/graphql/working-with-the-graphql-api).
 
@@ -30,7 +30,7 @@ npx @smithery/cli install linear-mcp-server --client claude
       "command": "npx",
       "args": [
         "-y",
-        "@modelcontextprotocol/server-linear"
+        "linear-mcp-server"
       ],
       "env": {
         "LINEAR_API_KEY": "your_linear_api_key_here"
@@ -98,7 +98,7 @@ npx @smithery/cli install linear-mcp-server --client claude
 
 Some example prompts you can use with Claude Desktop to interact with Linear:
 
-1. "Show me all my high-priority issues" → execute the `search_issues` tool and/or `linear-user:///{userId}/assigned` to find issues assigned to you with priority 1
+1. "Show me all my high-**priority** issues" → execute the `search_issues` tool and/or `linear-user:///{userId}/assigned` to find issues assigned to you with priority 1
 
 2. "Based on what I've told you about this bug already, make a bug report for the authentication system" → use `create_issue` to create a new high-priority issue with appropriate details and status tracking
 
